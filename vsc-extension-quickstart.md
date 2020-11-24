@@ -42,4 +42,6 @@ $ vsce publish
 解决方式：看下README.md文件中是否有http地址
 错误3：A ‘repository’field is missing from the 'package.josn' manifest file .Do you want to continue? [y/n] 
 解决方式：y
+错误4：ERROR  Access Denied: hzgood needs the following permission(s) on the resource /hzgood to perform this action: View user permissions on a resource
+vsce publish -p zzvvdhcwkfjmn2wjp6lmx4lbrmj2msg5bcozvfgom4qlhcsboufq
 ```
