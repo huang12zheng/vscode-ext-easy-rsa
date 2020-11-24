@@ -1,0 +1,25 @@
+{
+    "name": "eaay-rsa",
+    "displayName": "easy-rsa",
+    "description": "highlight on vars(easy-rsa)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "vars",
+            "aliases": ["", "vars"],
+            "extensions": ["vars"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "vars",
+            "scopeName": "vars",
+            "path": "./syntaxes/vars.tmLanguage.json"
+        }]
+    }
+}

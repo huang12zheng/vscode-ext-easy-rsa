@@ -1,0 +1,35 @@
+{
+	"name": "vars",
+	"patterns": [
+		{"include": "#comments"},
+		{ "include": "#keywords" },
+		{ "include": "#variables" },
+		{ "include": "#strings" }
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.number-sign",
+				"begin": "#",
+          		"end": "$\\n?"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.vars",
+				"match": "\\b(set_var)\\b"
+			}]
+		},
+		"variables": {
+			"name": "variable.parameter",
+			"match": "(EASYRSA_OPENSSL|EASYRSA_SSL_CONF|EASYRSA_PKI|EASYRSA_DN|EASYRSA_REQ_COUNTRY|EASYRSA_REQ_PROVINCE|EASYRSA_REQ_CITY|EASYRSA_REQ_ORG|EASYRSA_REQ_EMAIL|EASYRSA_REQ_OU|EASYRSA_KEY_SIZE|EASYRSA_ALGO|EASYRSA_CURVE|EASYRSA_EC_DIR|EASYRSA_CA_EXPIRE|EASYRSA_CERT_EXPIRE|EASYRSA_CRL_DAYS|EASYRSA_NS_SUPPORT|EASYRSA_NS_COMMENT|EASYRSA_TEMP_FILE|EASYRSA_REQ_CN|EASYRSA_DIGEST|EASYRSA_BATCH|EASYRSA_PASSIN|EASYRSA_PASSOUT)"
+		},
+		"strings": {
+			"name": "string.quoted.double",
+			"begin": "\"",
+			"end": "\""
+
+		}
+	},
+	"scopeName": "vars"
+}
