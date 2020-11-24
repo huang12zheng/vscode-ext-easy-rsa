@@ -13,13 +13,16 @@
         "languages": [{
             "id": "vars",
             "aliases": ["", "vars"],
-            "extensions": ["vars"],
-            "configuration": "./language-configuration.json"
+            "extensions": ["vars"]
         }],
         "grammars": [{
             "language": "vars",
             "scopeName": "vars",
             "path": "./syntaxes/vars.tmLanguage.json"
         }]
-    }
+    },
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/huang12zheng/vscode-ext-easy-rsa.git"
+	}
 }
