@@ -27,3 +27,19 @@
 
 * To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
 * To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
+
+## publish
+```
+$ vsce package
+# myExtension.vsix generated
+$ vsce publish
+```
+
+```issue
+错误1：Error:Missing publisher name. Learn more:
+解决方式：在package.json中将刚刚创建好的发布账号配置进去"publisher":"your name",
+错误2：Error:Make sure to edit the README.md file before you publish your extension
+解决方式：看下README.md文件中是否有http地址
+错误3：A ‘repository’field is missing from the 'package.josn' manifest file .Do you want to continue? [y/n] 
+解决方式：y
+```
